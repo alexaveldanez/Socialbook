@@ -50,8 +50,8 @@ export class MemberDetailComponent implements OnInit {
         big: photo.url,
         description: photo.description
       });
-      return imageUrls;
     }
+    return imageUrls;
   }
 
 }
