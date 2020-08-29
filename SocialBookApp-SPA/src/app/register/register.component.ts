@@ -21,7 +21,7 @@ import { User } from '../_models/user';
 })
 export class RegisterComponent implements OnInit {
   @Output() cancelRegister = new EventEmitter();
-  user: User = {};
+  user: User;
   registerForm: FormGroup;
   bsConfig: Partial<BsDatepickerConfig>;
 

@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SocialBookApp.API.Data;
 using SocialBookApp.API.Dtos;
+using SocialBookApp.API.Helpers;
 
 namespace SocialBookApp.API.Controllers
 {
+    [ServiceFilter(typeof(LogUserActivity))]
     [Authorize]
     [Route("api/[controller]")]
     [ApiController]
